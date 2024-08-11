@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="flex justify-center gap-10 w-full items-center p-4 text-rich">
       <div className="flex flex-col gap-3 items-start">
         <h1 className="text-4xl font-bold">
-          Luce tu <span className="text-primary">esencia</span> con bisutería <br /> artesanal.
+          Luce tu <span className="text-primary text-wrap">esencia</span> con nuestra bisutería artesanal.
         </h1>
         <button className="bg-primary text-rich text-xl font-bold px-8 py-4 rounded-lg">
           Ir a la tienda

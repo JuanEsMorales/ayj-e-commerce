@@ -1,17 +1,19 @@
 .collection-item {
   width: 300px;
   height: 300px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
 
-
-  & img {
+  & h1 {
     transition: all 0.3s ease-in-out;
-    mask: linear-gradient(black 80%, transparent);
+    transform: translateY(75px);
   }
-  &:hover img {
-    mask: linear-gradient(black 60%, transparent);
+  &:hover h1 {
+    transform: translateY(0);
+  }
+  &:hover .detail-info {
+    transform: translateY(0);
   }
 }
 
@@ -20,4 +22,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+}
+
+.detail-info {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(75px);
 }
