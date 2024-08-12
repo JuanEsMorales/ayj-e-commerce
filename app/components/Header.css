@@ -1,0 +1,80 @@
+:root {
+  --bar-width: 30px;
+  --bar-height: 3px;
+  --hamburger-gap: 5px;
+  --hamburger-margin: 10px;
+  --animation-timing: 0.2s;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+*::after, *::before {
+  box-sizing: border-box;
+}
+
+.hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: max-content;
+  gap: var(--hamburger-gap);
+  cursor: pointer;
+  z-index: 60;
+
+  & input {
+    appearance: none;
+    outline: none;
+    pointer-events: none;
+
+    &:checked {
+      opacity: 0;
+      width: 0;
+    }
+  }
+
+  &:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+  }
+  &:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+  }
+  &:has(input:checked) + .nav-responsive {
+    transform: translateY(0);
+  }
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: #F7B32B;
+  border-radius: var(--bar-height);
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing), translate var(--animation-timing), rotate var(--animation-timing);
+}
+
+.nav-responsive {
+  transform: translateY(-100%);
+  transform-origin: top;
+  transition: transform var(--animation-timing);
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  padding: 4px;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid #F7B32B;
+  }
+}
