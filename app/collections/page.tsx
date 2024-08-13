@@ -148,17 +148,7 @@ export default function CollectionsPage() {
         <section key={collection.id} className="flex flex-col gap-10 w-[90%] items-center justify-center p-4 text-rich mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center">{collection.name}</h2>
           <h3 className="text-xl md:text-2xl font-semibold text-center">{collection.description}</h3>
-          <Carousel className="w-full">
-            <CarouselContent className="-ml-2 md:-ml-4">
-              {collection.products.map((product) => (
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4" key={product.id}>
-                  <CardProduct product={product} />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+          <CarouselProducts products={collection.products} />
         </section>
       ))}
     </main>

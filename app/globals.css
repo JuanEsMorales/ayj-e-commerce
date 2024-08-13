@@ -10,6 +10,7 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
+    --primaryPage: #F7B32B;
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
@@ -66,13 +67,6 @@
   border-radius: 10px;
   overflow: hidden;
 
-  & h1 {
-    transition: all 0.3s ease-in-out;
-    transform: translateY(75px);
-  }
-  &:hover h1 {
-    transform: translateY(0);
-  }
   &:hover .detail-info {
     transform: translateY(0);
   }
@@ -80,7 +74,7 @@
 
 .detail-info {
   transition: all 0.3s ease-in-out;
-  transform: translateY(75px);
+  transform: translateY(60px);
 }
 
 @layer base {
