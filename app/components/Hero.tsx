@@ -8,7 +8,7 @@ export default function Hero() {
         <h1 className="text-3xl md:text-4xl text-center md:text-left font-bold">
           Luce tu <span className="text-primary text-wrap">esencia</span> con nuestra bisutería artesanal.
         </h1>
-        <Link href={"/products"} className="bg-primary text-rich text-xl font-bold px-8 py-4 rounded-lg">
+        <Link href={"/products"} className="bg-primaryPage text-rich text-xl font-bold px-8 py-4 rounded-lg">
           Ir a la tienda
         </Link>
       </div>

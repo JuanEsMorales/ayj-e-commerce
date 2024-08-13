@@ -1,6 +1,7 @@
 import Image from "next/image"
 import "./Collections.css"
 import Link from "next/link"
+import { CardCollection } from "./Card"
 
 const mockCollections = [
   {
@@ -36,16 +37,7 @@ export default function Collections() {
       <h3 className="text-xl md:text-2xl font-semibold text-center">Descubre la mejor pieza para complementar tu estilo.</h3>
       <div className="collection-grid">
         {mockCollections.map((collection) => (
-          <div key={collection.id} className="flex flex-col gap-3 items-start justify-end p-4 relative collection-item shadow-xl hover:shadow-2xl transition mx-auto">
-            <Image src={collection.image} alt="imagen" width={300} height={300} className="absolute top-0 left-0 w-full h-full object-cover" />
-            <h1 className="text-xl font-bold z-10">{collection.name}</h1>
-            <div className="z-10 detail-info">
-              <p className="text-sm mb-3 font-bold">{collection.description}</p>
-              <Link href={`/collections/${collection.id}`} className="bg-primary text-rich text-sm font-bold px-4 py-2 rounded-lg z-10">
-                Ver coleccion
-              </Link>
-            </div>
-          </div>
+          <CardCollection key={collection.id} collection={collection} />
         ))}
       </div>
     </section>

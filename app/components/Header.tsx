@@ -6,7 +6,7 @@ import "./Header.css";
 
 export default function Header() {
   return (
-    <header className="flex justify-between gap-3 w-full items-center p-4 text-primary font-bold sticky top-0 z-50 bg-white/70 backdrop-blur-sm">
+    <header className="flex justify-between gap-3 items-center p-4 text-primaryPage font-bold sticky top-0 z-50 bg-white/70 backdrop-blur-sm w-[90%] mx-auto">
       <h1 className="text-2xl font-bold">
         <Link href="/">A<span className="text-rich">&</span>J Bisutería</Link>
       </h1>
@@ -18,7 +18,7 @@ export default function Header() {
       </ul>
       <ul className="gap-4 nav-icons hidden md:flex">
         <li><button><SearchIcon /></button></li>
-        <li className="relative"><Link href={"/cart"}><CartIcon /><span className="absolute bottom-0 right-0 text-[10px] font-bold bg-rich text-primary flex items-center justify-center w-4 h-4 rounded-[100%]">+9</span></Link></li>
+        <li className="relative"><Link href={"/cart"}><CartIcon /><span className="absolute bottom-0 right-0 text-[10px] font-bold bg-rich text-primaryPage flex items-center justify-center w-4 h-4 rounded-[100%]">+9</span></Link></li>
         <li><Link href={"/user"}><UserIcon /></Link></li>
       </ul>
       <label htmlFor="hamburger-menu" className="hamburger-menu flex flex-col md:hidden">
@@ -33,7 +33,7 @@ export default function Header() {
         </ul>
         <ul className="flex justify-center gap-4 mt-4">
           <li><button><SearchIcon /></button></li>
-          <li className="relative"><Link href={"/cart"}><CartIcon /><span className="absolute bottom-0 right-0 text-[10px] font-bold bg-rich text-primary flex items-center justify-center w-4 h-4 rounded-[100%]">+9</span></Link></li>
+          <li className="relative"><Link href={"/cart"}><CartIcon /><span className="absolute bottom-0 right-0 text-[10px] font-bold bg-rich text-primaryPage flex items-center justify-center w-4 h-4 rounded-[100%]">+9</span></Link></li>
           <li><Link href={"/user"}><UserIcon /></Link></li>
         </ul>
       </nav>
