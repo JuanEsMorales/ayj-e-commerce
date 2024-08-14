@@ -77,6 +77,11 @@
   transform: translateY(60px);
 }
 
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 @layer base {
   * {
     @apply border-border;

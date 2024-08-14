@@ -1,6 +1,4 @@
-import Image from "next/image"
 import "./Collections.css"
-import Link from "next/link"
 import { CardCollection } from "./Card"
 
 const mockCollections = [
@@ -35,7 +33,7 @@ export default function Collections() {
     <section className="flex flex-col gap-10 w-full items-center justify-center p-4 text-rich">
       <h2 className="text-2xl md:text-3xl font-bold text-center">Explora nuestras nuevas colecciones</h2>
       <h3 className="text-xl md:text-2xl font-semibold text-center">Descubre la mejor pieza para complementar tu estilo.</h3>
-      <div className="collection-grid">
+      <div className="list-grid w-full">
         {mockCollections.map((collection) => (
           <CardCollection key={collection.id} collection={collection} />
         ))}

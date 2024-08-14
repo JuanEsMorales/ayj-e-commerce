@@ -1,12 +1,12 @@
-import Link from "next/link";
 import SearchIcon from "@/app/components/icons/SearchIcon";
 import CartIcon from "@/app/components/icons/CartIcon";
 import UserIcon from "@/app/components/icons/UserIcon";
+import { Link } from 'next-view-transitions'
 import "./Header.css";
 
 export default function Header() {
   return (
-    <header className="flex justify-between gap-3 items-center p-4 text-primaryPage font-bold sticky top-0 z-50 bg-white/70 backdrop-blur-sm w-[90%] mx-auto">
+    <header className="flex justify-between gap-3 items-center p-4 text-primaryPage font-bold sticky top-0 z-50 bg-white/70 backdrop-blur-sm w-[90%] h-24 mx-auto">
       <h1 className="text-2xl font-bold">
         <Link href="/">A<span className="text-rich">&</span>J Bisutería</Link>
       </h1>
