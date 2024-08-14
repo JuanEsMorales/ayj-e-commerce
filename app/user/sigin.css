@@ -1,0 +1,40 @@
+.input-box input {
+  & ~ span {
+    transition: all 0.3s ease;
+  }
+  &:valid  ~ span, &:focus ~ span {
+    color: #fff;
+    @apply text-sm;
+    transform: translateY(-34px);
+  }
+  &:valid  ~ i, &:focus ~ i {
+    height: 44px;
+  }
+}
+
+.input-box i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  height: 2px;
+  border-radius: 8px;
+  overflow: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+
+  & a {
+    margin-top: 10px;
+    @apply text-sm text-primaryPage;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
