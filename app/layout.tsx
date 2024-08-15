@@ -4,9 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import lora from "./fonts/Lora";
 import { ViewTransitions } from 'next-view-transitions'
-
-
-
+import { BackLinkProvider } from "./context/backlink";
 
 export const metadata: Metadata = {
   title: "A&J Bisutería",
@@ -19,14 +17,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ViewTransitions>
-      <html lang="en">
-        <body className={`${lora.className}`}>
-          <Header />
-          {children}
-          <Footer />
-        </body>
-      </html>
-    </ViewTransitions>
+    <BackLinkProvider>
+      <ViewTransitions>
+        <html lang="en">
+          <body className={`${lora.className}`}>
+            <Header />
+            {children}
+            <Footer />
+          </body>
+        </html>
+      </ViewTransitions>
+    </BackLinkProvider>
   );
 }

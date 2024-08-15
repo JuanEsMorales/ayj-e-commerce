@@ -1,10 +1,17 @@
+"use client";
+
 import { Collection, Product } from "@/app/types";
 import Image from "next/image";
 import { Link } from 'next-view-transitions'
 import CartAddIcon from "./icons/CartAddIcon";
+import { BackLinkContext } from '@/app/context/backlink'
+import { useContext } from "react";
+import { usePathname } from "next/navigation";
 
 export function CardProduct({ product }: { product: Product }) {
   const { id, name, price, image } = product;
+  const pathname = usePathname();
+  const { setBackLink } = useContext(BackLinkContext);
   return (
     <div className="flex flex-col gap-3 items-start justify-end relative card-item shadow-xl hover:shadow-2xl transition mx-auto image-product">
       <Image src={image} alt="imagen" width={300} height={300} className="absolute top-0 left-0 w-full h-full object-cover" />
@@ -12,10 +19,13 @@ export function CardProduct({ product }: { product: Product }) {
         <h1 className="text-xl text-rich font-bold z-10">{name}</h1>
         <p className="text-sm text-rich mb-5 font-bold">${price}</p>
         <div className="flex gap-3">
-          <Link href={`/products/${id}`} className="bg-primaryPage flex justify-center items-center text-rich text-sm font-bold px-4 py-2 rounded-lg z-10">
+          <Link href={`/products/${id}`} 
+          onClick={() => {setBackLink(pathname)}} 
+          className="bg-primaryPage flex justify-center items-center text-rich text-sm font-bold px-4 py-2 rounded-lg z-10">
             Ver
           </Link>
-          <Link href={`/cart/add/${id}`} className="bg-primaryPage flex justify-center items-center text-rich text-sm font-bold px-4 py-2 rounded-lg z-10">
+          <Link href={`/cart/add/${id}`} 
+          className="bg-primaryPage flex justify-center items-center text-rich text-sm font-bold px-4 py-2 rounded-lg z-10">
             <CartAddIcon /> Agregar
           </Link>
         </div>
