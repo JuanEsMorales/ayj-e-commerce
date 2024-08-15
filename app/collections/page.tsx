@@ -50,37 +50,37 @@ const mockCollections = [
     description: "coleccion de aretes hechos a mano",
     products: [
       {
-        id: "1",
+        id: "7",
         name: "Arete de acero dorado",
         price: 2000,
         image: "https://bisuteriacoketa.wordpress.com/wp-content/uploads/2018/11/12438ab35899583ebf24d20a0eb2584301.jpg?w=640"
       },
       {
-        id: "2",
+        id: "8",
         name: "Arete de acero azul",
         price: 5000,
         image: "https://bisuteriacoketa.wordpress.com/wp-content/uploads/2018/11/12438ab35899583ebf24d20a0eb2584301.jpg?w=640"
       },
       {
-        id: "3",
+        id: "9",
         name: "Arete de acero rojo",
         price: 20000,
         image: "https://bisuteriacoketa.wordpress.com/wp-content/uploads/2018/11/12438ab35899583ebf24d20a0eb2584301.jpg?w=640"
       },
       {
-        id: "4",
+        id: "10",
         name: "Arete de acero dorado",
         price: 2000,
         image: "https://bisuteriacoketa.wordpress.com/wp-content/uploads/2018/11/12438ab35899583ebf24d20a0eb2584301.jpg?w=640"
       },
       {
-        id: "5",
+        id: "11",
         name: "Arete de acero azul",
         price: 5000,
         image: "https://bisuteriacoketa.wordpress.com/wp-content/uploads/2018/11/12438ab35899583ebf24d20a0eb2584301.jpg?w=640"
       },
       {
-        id: "6",
+        id: "12",
         name: "Arete de acero rojo",
         price: 20000,
         image: "https://bisuteriacoketa.wordpress.com/wp-content/uploads/2018/11/12438ab35899583ebf24d20a0eb2584301.jpg?w=640"
@@ -93,37 +93,37 @@ const mockCollections = [
     description: "coleccion de pulseras hechas a mano",
     products: [
       {
-        id: "1",
+        id: "13",
         name: "Pulsera de acero",
         price: 2000,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sppMPWw2LJmDAfJK5asifV1SiEWeB6ugFsluFCjcc6sUS3bX8qzjdQFTgNAFofkMN04&usqp=CAU"
       },
       {
-        id: "2",
+        id: "14",
         name: "Pulsera de hierro",
         price: 2500,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sppMPWw2LJmDAfJK5asifV1SiEWeB6ugFsluFCjcc6sUS3bX8qzjdQFTgNAFofkMN04&usqp=CAU"
       },
       {
-        id: "3",
+        id: "15",
         name: "Pulsera de plata",
         price: 3000,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sppMPWw2LJmDAfJK5asifV1SiEWeB6ugFsluFCjcc6sUS3bX8qzjdQFTgNAFofkMN04&usqp=CAU"
       },
       {
-        id: "4",
+        id: "16",
         name: "Pulsera de acero",
         price: 2000,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sppMPWw2LJmDAfJK5asifV1SiEWeB6ugFsluFCjcc6sUS3bX8qzjdQFTgNAFofkMN04&usqp=CAU"
       },
       {
-        id: "5",
+        id: "17",
         name: "Pulsera de hierro",
         price: 2500,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sppMPWw2LJmDAfJK5asifV1SiEWeB6ugFsluFCjcc6sUS3bX8qzjdQFTgNAFofkMN04&usqp=CAU"
       },
       {
-        id: "6",
+        id: "18",
         name: "Pulsera de plata",
         price: 3000,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sppMPWw2LJmDAfJK5asifV1SiEWeB6ugFsluFCjcc6sUS3bX8qzjdQFTgNAFofkMN04&usqp=CAU"
